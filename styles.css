@@ -3,21 +3,18 @@
 *{box-sizing:border-box}
 html{min-width:320px;background:var(--bg)}
 body{margin:0;color:var(--text);font-family:Manrope,Arial,sans-serif;background-color:var(--bg);background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:32px 32px;min-height:100vh}
-.topbar{height:68px;border-bottom:1px solid #302426;background:#090909ed;display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,22px)}
-.brand{display:flex;gap:11px;align-items:center;color:var(--text);text-decoration:none;font:700 13px 'IBM Plex Mono',monospace;letter-spacing:1.7px}
-.brand-logo{width:34px;height:34px;object-fit:contain;filter:drop-shadow(0 0 5px #ff092f) drop-shadow(0 0 12px #ff092f)}
-.source-link,.downloads a{color:#c9bfc0;text-decoration:none;font:500 11px 'IBM Plex Mono',monospace;letter-spacing:1px}
-.source-link:hover,.downloads a:hover{color:var(--red2)}
+.brand{display:inline-flex;gap:10px;align-items:center;color:var(--text);text-decoration:none;font:700 15px "IBM Plex Mono",monospace;letter-spacing:1.8px}
+.intro-brand{margin-bottom:34px}
+.brand-logo{width:30px;height:30px;object-fit:contain}
 main{width:min(720px,calc(100% - 40px));margin:0 auto}
-.intro{padding:76px 0 38px}
+.intro{padding:58px 0 38px}
 .eyebrow{font:600 10px 'IBM Plex Mono',monospace;letter-spacing:2px;color:var(--red2);margin:0 0 13px}
-.hero-logo{display:block;width:min(310px,80vw);max-height:170px;object-fit:contain;object-position:left center;filter:drop-shadow(0 0 7px #ff092f) drop-shadow(0 0 20px #d90028);margin:4px 0 0}
 .description{color:#b7aeae;font-size:14px;line-height:1.8;margin:18px 0 0}
-.panel{background:linear-gradient(145deg,#141111,#0e0e0e 55%);border:1px solid #38272a;border-top:2px solid var(--red);box-shadow:0 0 24px #ff092f18;padding:27px}
+.panel{background:linear-gradient(145deg,#141111,#0e0e0e 55%);border:1px solid #38272a;border-top:2px solid var(--red);padding:27px}
 .panel-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
 .panel-heading h2,.steps h2,.downloads h2{font:600 19px 'IBM Plex Mono',monospace;margin:0}
 .status{font:500 9px 'IBM Plex Mono',monospace;letter-spacing:1px;color:#b9b0b0;display:flex;align-items:center;gap:8px}
-.status i{width:7px;height:7px;background:#c60020;box-shadow:0 0 10px #c60020;border-radius:50%}
+.status i{width:7px;height:7px;background:#c60020;border-radius:50%}
 label{display:block;margin:19px 0 8px;color:#b7adad;font:500 10px 'IBM Plex Mono',monospace;letter-spacing:1.2px;text-transform:uppercase}
 select{width:100%;height:48px;background:#090909;border:1px solid #403638;border-radius:0;color:#f4eeee;padding:0 13px;font:500 13px 'IBM Plex Mono',monospace;outline:none}
 select:focus{border-color:var(--red2)}
@@ -29,8 +26,8 @@ select:disabled{opacity:.45}
 .notice{padding:12px 13px;background:#1a1113;border-left:2px solid #6c2834;color:#c9bfc0;font-size:12px;line-height:1.6;margin:0 0 15px}
 .notice.ready{border-color:#c60020;color:#f0dddd}
 .installer{display:block}
-#install-button{width:100%;height:49px;border:0;background:var(--red);box-shadow:0 0 14px #ff092f;color:white;font:700 11px 'IBM Plex Mono',monospace;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer;transition:background .15s}
-#install-button:not(:disabled):hover{background:#ff294b;box-shadow:0 0 22px #ff092f}
+#install-button{width:100%;height:49px;border:0;background:var(--red);color:white;font:700 11px 'IBM Plex Mono',monospace;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer;transition:background .15s}
+#install-button:not(:disabled):hover{background:#e60029}
 #install-button:disabled{background:#392126;color:#938587;cursor:not-allowed}
 .installer [slot=unsupported],.installer [slot=not-allowed]{display:block;margin-top:10px;color:#e6a0a8;font-size:12px}
 .fine-print{font-size:11px;line-height:1.7;color:#8e8586;margin:16px 0 0}
