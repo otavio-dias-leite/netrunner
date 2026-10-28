@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#a90018">
+  <meta name="description" content="Netrunner firmware — downloads and USB installation.">
+  <title>Netrunner — Firmware</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Netrunner home"><span class="mark">N</span><span>NETRUNNER</span></a>
+    <a class="source-link" href="https://github.com/otavio-dias-leite/netrunner" target="_blank" rel="noreferrer">SOURCE ↗</a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">EMBEDDED SYSTEM / FIRMWARE</p>
+      <h1>NETRUNNER<span>.</span></h1>
+      <p class="description">A Linux-inspired firmware for portable hardware.<br>Not a Linux distribution.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="install-title">
+      <div class="panel-heading">
+        <div><p class="eyebrow">USB INSTALLER</p><h2 id="install-title">Install firmware</h2></div>
+        <span class="status"><i></i> WEB SERIAL</span>
+      </div>
+
+      <label for="device">Device</label>
+      <select id="device"></select>
+
+      <label for="version">Version</label>
+      <select id="version" disabled></select>
+
+      <div class="release-info">
+        <div><span class="muted">RELEASE</span><strong id="release-name">—</strong></div>
+        <div><span class="muted">FIRMWARE</span><strong id="release-size">—</strong></div>
+      </div>
+
+      <div id="install-state" class="notice" role="status">Select a device and version.</div>
+      <esp-web-install-button id="installer" class="installer" hide-progress>
+        <button slot="activate" id="install-button" disabled>Firmware not available</button>
+        <span slot="unsupported">Use Chrome or Edge on desktop with Web Serial support.</span>
+        <span slot="not-allowed">USB access is blocked in this context. Open this site over HTTPS.</span>
+      </esp-web-install-button>
+
+      <p class="fine-print">Use a data-capable USB cable. Disconnect other serial monitors before installation. Flashing replaces the firmware currently on the device.</p>
+    </section>
+
+    <section class="steps">
+      <h2>Installation</h2>
+      <ol>
+        <li>Connect the device to your computer using USB.</li>
+        <li>Select the hardware and firmware version.</li>
+        <li>Press install and choose the serial port.</li>
+        <li>Wait until the process finishes before disconnecting.</li>
+      </ol>
+    </section>
+
+    <section class="downloads">
+      <h2>Project files</h2>
+      <a href="https://github.com/otavio-dias-leite/netrunner" target="_blank" rel="noreferrer">Source code and releases <span>↗</span></a>
+      <a href="https://github.com/otavio-dias-leite/netrunner/issues" target="_blank" rel="noreferrer">Report an issue <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><span>NETRUNNER</span><span>OTÁVIO LEITE · 2026</span></footer>
+</body>
+</html>
