@@ -1,0 +1,17 @@
+{
+  "devices": {
+    "cardputer-adv": {
+      "name": "M5Stack Cardputer ADV",
+      "versions": [
+        {
+          "version": "0.3",
+          "name": "Netrunner 0.3",
+          "status": "source-only",
+          "size": null,
+          "manifest": null,
+          "statusMessage": "Version 0.3 source is available. The compiled flash package has not been published yet."
+        }
+      ]
+    }
+  }
+}
