@@ -3,9 +3,9 @@
 *{box-sizing:border-box}
 html{min-width:320px;background:var(--bg)}
 body{margin:0;color:var(--text);font-family:Manrope,Arial,sans-serif;background-color:var(--bg);background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:32px 32px;min-height:100vh}
-.brand{display:inline-flex;gap:10px;align-items:center;color:var(--text);text-decoration:none;font:700 15px "IBM Plex Mono",monospace;letter-spacing:1.8px}
-.intro-brand{margin-bottom:34px}
-.brand-logo{width:30px;height:30px;object-fit:contain}
+.brand{display:inline-flex;gap:15px;align-items:center;color:#fff;text-decoration:none;font:700 25px "IBM Plex Mono",monospace;letter-spacing:2.4px;text-shadow:0 0 7px #ff092f,0 0 17px #ff092f,0 0 30px #c90025}
+.intro-brand{margin-bottom:38px}
+.brand-logo{width:64px;height:64px;object-fit:contain;filter:drop-shadow(0 0 5px #ff092f) drop-shadow(0 0 13px #ff092f) drop-shadow(0 0 25px #b90024)}
 main{width:min(720px,calc(100% - 40px));margin:0 auto}
 .intro{padding:58px 0 38px}
 .eyebrow{font:600 10px 'IBM Plex Mono',monospace;letter-spacing:2px;color:var(--red2);margin:0 0 13px}
