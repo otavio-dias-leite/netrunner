@@ -39,3 +39,8 @@ select:disabled{opacity:.45}
 .downloads a{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #1b2c42;text-transform:none;letter-spacing:.2px;font-size:12px}
 footer{border-top:1px solid #1b2c42;padding:20px max(5vw,22px);display:flex;justify-content:space-between;color:#766e6f;font:10px 'IBM Plex Mono',monospace;letter-spacing:1px}
 @media(max-width:520px){.intro{padding-top:55px}.panel{padding:20px}.panel-heading{align-items:flex-start;gap:12px}.status{font-size:8px}.release-info{gap:8px}footer{font-size:8px}}
+
+.profile-note{margin:0 0 25px;padding:17px 19px;background:linear-gradient(145deg,#101c2c,#0b1422);border:1px solid #183b61;border-left:2px solid var(--blue);color:#b7c6d8;font-size:12px;line-height:1.75}
+.profile-note .eyebrow{margin-bottom:9px}
+.profile-note p:last-child{margin:0}
+.profile-note strong{color:#f0eeee;font-weight:700}
