@@ -4,6 +4,8 @@ Official firmware page and USB installer for Netrunner.
 
 **Website:** https://otavio-dias-leite.github.io/netrunner/
 
+> **Disclaimer:** Netrunner is a hobby project developed with the assistance of AI and some manual technical adjustments. It is not intended to be a professional product or service.
+
 ## Local preview
 
 Serve the repository root over HTTP (not file://):
@@ -34,6 +36,3 @@ USB installation requires a Chromium-based desktop browser with Web Serial suppo
 - M5Stack Cardputer ADV — Netrunner 0.3 (source available; compiled flash package pending).
 
 The firmware source is maintained separately from this installer until a tested flash package is available.
-## About the developer
-
-Embedded systems and IoT are personal interests and a hobby explored through projects such as Netrunner. The maintainer's formal background is in Electrical Engineering, with technical training in Electrotechnics—not Electronics Engineering or Computer Engineering. Computing is also part of the maintainer's studies, but Netrunner is an independent learning and experimentation project, not a claim of professional specialization in embedded systems.
